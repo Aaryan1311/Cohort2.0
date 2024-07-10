@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <script>
+        function sum(){
+            const a = document.getElementById("number1").value;
+            const b = document.getElementById("number2").value;
+            const ans = parseInt(a) + parseInt(b);
+            const answer_element = document.getElementById("finalsum");
+            answer_element.innerHTML = ans;
+            const tillsum_element = document.getElementById("number1");
+            tillsum_element.innerHTML = ans;
+            }
+    </script>
+    <input oninput="sum()" id="number1" type="number" placeholder="firstnumber"> <br><br>
+    <input oninput="sum()" id="number2" type="number" placeholder="secondnumber"> <br><br>
+    <!-- <button onclick="sum()">Calculate Sum</button><br><br> -->
+    <div id="finalsum">Answer will be here</div>
+</body>
+</html>

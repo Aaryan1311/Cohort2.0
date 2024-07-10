@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch api part 1</title>
+</head>
+<body>
+
+    <h1>
+        Fetch apt testing
+    </h1>
+
+    <button onclick="getname()">
+        press me to get 10 names
+    </button>
+
+    <script>
+        async function getname(){
+            // alert("hi there")
+            const res = await fetch("https://fakerapi.it/api/v1/persons")
+            const finaldata = await res.json();
+            console.log(finaldata);
+        }
+    </script>
+    
+</body>
+</html>

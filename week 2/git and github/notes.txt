@@ -1,0 +1,26 @@
+Commands
+1. cd : change directory
+2. mkdir : make you directory
+3. ls : all the files and folders in it
+4. git init : Initialized empty git repository
+5. ls -a : see all hidden files(that starts with ".")
+6. touch file-name : make a new file of name "file-name"
+7. git status :  displays the state of working directory snd staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history.
+8. git add : add the changes in the wprking directory
+        8.1 git add . : add all files
+        8.2 git add "file_name" : add only mentoned file   
+9. git commit -m "some_message" : tell what changes have been made with some messages
+10. vi "file_name" : 
+    10.1 : press "i"
+    10.2 : enter text 
+    10.3 : esc + :q! exit without saving changes
+    10.4 : eqc + :wq! exit after save the changes
+11. cat "file_name" : read file content
+12. git restore --staged "file_name" : remove from the list of getting commited and add it back into the untracked file
+13. git rm -rf : remove file and make changes in git status
+14. git reset "hash-id" : restore changes back to git status if commited previously
+        14.1 git restore "file_name" : restored it completlty
+15. git stash : something like draft, which save the changes and restored changes when needed 
+        15.1 git stash pop : restore changes
+        15.2 git statsh clear : remove previously saved changes
+
