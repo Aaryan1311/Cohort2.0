@@ -9,8 +9,9 @@ const schema = zod.object({
     kidney: zod.array(zod.number())
 });
 
-app.use(express.json());
+
 app.use(login);
+app.use(express.json());
 
 function login(req, res, next) {
     const { email, password } = req.headers;
@@ -88,3 +89,4 @@ app.use(function(err, req, res, next) {
 app.listen(port, function() {
     console.log(`App is listening on ${port}`);
 });
+3

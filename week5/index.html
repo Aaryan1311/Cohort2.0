@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function clickcount(){
+            const ele = document.getElementById("btn").innerHTML;
+            const split = ele.split(" ")[1];
+            const add = parseInt(split)+1;
+            document.getElementById("btn").innerHTML = "Counter " + add;
+        }
+    </script>
+    <button id = "btn" onclick="clickcount()">Counter 1</button>
+</body>
+</html>
