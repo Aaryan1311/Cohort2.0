@@ -7,13 +7,18 @@
 </head>
 <body>
     <script>
-        function clickcount(){
-            const ele = document.getElementById("bt").innerHTML;
-            const split = ele.split(" ")[1];
-            const add = parseInt(split)+1;
-            document.getElementById("bt").innerHTML = "Counter " + add;
+        function onButtonPress() {
+            const currInnerContent = document.getElementById("bt").innerHTML;
+            console.log(currInnerContent);
+            const arr = currInnerContent.split(" ")
+            console.log(arr);
+            const oldnum = parseInt(arr[1]);
+            console.log(oldnum);
+            const newnum = oldnum + 1;
+            console.log(newnum);
+            document.getElementById("bt").innerHTML = `Counter ${newnum}`;
         }
     </script>
-    <button id = "bt" onclick="clickcount()">Counter 1</button>
+    <button onclick="onButtonPress()" id="bt">Counter 0</button>
 </body>
 </html>
